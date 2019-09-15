@@ -48,5 +48,22 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_EXCLUDE_TWRPAPP := true
 TW_HAS_EDL_MODE := true
+TW_INCLUDE_FBE := true
 
 BOARD_USES_QCOM_HARDWARE := true
+
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+PLATFORM_SECURITY_PATCH := 2025-12-31
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+
+# Fix userdata decryption
+    TW_CRYPTO_USE_SYSTEM_VOLD := \
+    qseecomd \
+    servicemanager \
+    hwservicemanager \
+    keymaster-4-0
+
+TW_CRYPTO_SYSTEM_VOLD_MOUNT := system vendor
+TW_CRYPTO_SYSTEM_VOLD_DEBUG := true
+TW_CRYPTO_SYSTEM_VOLD_SERVICES := true
