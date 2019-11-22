@@ -97,7 +97,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
 
@@ -114,6 +113,8 @@ TW_CRYPTO_SYSTEM_VOLD_SERVICES := true
 
 #Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
+TARGET_INIT_VENDOR_LIB := libinit_onclite
+TARGET_RECOVERY_DEVICE_MODULES := libinit_onclite
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
