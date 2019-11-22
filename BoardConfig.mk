@@ -114,6 +114,8 @@ TW_CRYPTO_SYSTEM_VOLD_SERVICES := true
 
 #Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
+TARGET_INIT_VENDOR_LIB := libinit_onclite
+TARGET_RECOVERY_DEVICE_MODULES := libinit_onclite
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
