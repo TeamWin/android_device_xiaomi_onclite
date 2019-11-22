@@ -4,3 +4,4 @@ ro.product.device=onclite
 ro.build.product=onclite
 ro.treble.enabled=true
 ro.build.system_root_image=true
+
