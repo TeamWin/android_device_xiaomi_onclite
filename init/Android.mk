@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The TwrpBuilder Open-Source Project
+# Copyright (C) 2017-2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,15 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_DEVICE), onclite)
-
 LOCAL_PATH := $(call my-dir)
 
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-
 include $(CLEAR_VARS)
-endif
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_C_INCLUDES := \
+    system/core/base/include \
+    system/core/init
+LOCAL_SRC_FILES := init_onclite.cpp
+LOCAL_MODULE := libinit_onclite
+
+include $(BUILD_STATIC_LIBRARY)
