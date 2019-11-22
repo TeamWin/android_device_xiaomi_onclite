@@ -26,9 +26,7 @@ This TWRP automatically detects the device region and updates the device code na
 Bugs:
 
 - Decryption of /data 
-- Mount of /vendor
-- Backup/Restore (Needs more testing)
-- USB OTG (Needs more testing)
+- Mount of /vendor (Need to test)
 
 ## Compile
 
