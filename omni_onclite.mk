@@ -23,7 +23,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=msm8953
 
-PRODUCT_DEVICE := onclite
+PRODUCT_DEVICE := onc
 PRODUCT_NAME := omni_onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Redmi 7
