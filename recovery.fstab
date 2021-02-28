@@ -14,6 +14,8 @@
 /system_image       emmc              /dev/block/bootdevice/by-name/system                 flags=display="System Image";backup=1;flashimg=1
 /vendor_image       emmc              /dev/block/bootdevice/by-name/vendor                 flags=display="Vendor Image";flashimg=1;backup=1
 /persist_image      emmc              /dev/block/bootdevice/by-name/persist                flags=display="Persist";backup=1;flashimg=1
+/firmware_image     emmc              /dev/block/bootdevice/by-name/modem                  flags=display="Firmware";flashimg=0;backup=1
+
 /splash             emmc              /dev/block/bootdevice/by-name/splash                 flags=display="Splash Logo";backup=1;flashimg=1
 
 /data               ext4              /dev/block/bootdevice/by-name/userdata               flags=encryptable=footer;length=-16384;fileencryption=ice:aes-256-cts:aes-256-heh:aes-256-xts:inlinecrypt_optimized
