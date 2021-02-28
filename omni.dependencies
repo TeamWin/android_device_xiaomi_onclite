@@ -1,8 +1,14 @@
 [
   {
-    "remote":"omnirom",
-    "repository": "android_vendor_qcom_opensource_commonsys",
-    "target_path": "vendor/qcom/opensource/commonsys",
-    "revision":"android-9.0"
+    "remote":          "omnirom",
+    "repository":      "android_vendor_qcom_opensource_commonsys",
+    "target_path":     "vendor/qcom/opensource/commonsys",
+    "revision":        "android-9.0"
+  },
+  {
+    "remote":          "github",
+    "repository":      "LineageOS/android_kernel_xiaomi_onclite",
+    "target_path":     "kernel/xiaomi/onclite",
+    "revision":        "lineage-18.1"
   }
 ]
